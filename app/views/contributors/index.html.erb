@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Загрузить контрибьюторов GitHub</h1>
+
+  <%= form_tag contributors_fetch_path, method: :get do %>
+    <label for="repo_url">URL репозитория:</label>
+    <%= text_field_tag :repo_url, nil, required: true %><br>
+    <%= submit_tag "Загрузить контрибьюторов" %>
+  <% end %>
+</div>

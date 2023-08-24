@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Топ-3 контрибуторов</h1>
+
+  <ul>
+  <% @top_contributors.each do |contributor| %>
+    <li>
+      <strong><%= contributor.login %></strong> сделал <%= contributor.contributions %> контрибутов.
+      <%= link_to 'Скачать сертификат', download_certificate_contributor_path(contributor) %>
+    </li>
+  <% end %>
+  </ul>
+
+  <p><%= link_to 'Скачать архив', download_zip_contributors_path %></p>
+</div>
