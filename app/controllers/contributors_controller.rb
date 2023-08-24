@@ -40,7 +40,6 @@ class ContributorsController < ApplicationController
  
   def download_zip
     top_contributors = Contributor.last(3)
-    # zip_content = PdfGenerator.generate_zip(@contributors)
     zip_content = PdfGenerator.generate_zip(top_contributors)
     send_data zip_content, filename: "certificates.zip", type: "application/zip", disposition: "attachment"
   end
