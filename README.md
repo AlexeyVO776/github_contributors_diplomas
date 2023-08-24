@@ -32,3 +32,9 @@ Integration with the GitHub API to retrieve the list of contributors.
         rails server
 
 Now, you can open the application in your browser at **http://localhost:3000**.
+
+Usage
+
+1. Enter the repository URL into the "Repository URL" field.
+2. Click on "Fetch Contributors".
+3. Download individual contributor certificates or the ZIP archive containing all of them.
